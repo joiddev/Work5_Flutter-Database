@@ -42,8 +42,11 @@ class _MyHomePageState extends State<MyHomePage> {
         
         title: Text(widget.title),
         actions: [
-          IconButton(onPressed: (){
-
+          IconButton(
+            onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){   
+                    return Text("Screen 2");
+                },));
           },
           icon: Icon(Icons.add))
         ],
